@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+button,h2,h3,h4{
+   
+  background-color: palevioletred;
+    transition-property: all;
+    transition-duration: 3s;
+   
+}
+
+button:hover~img{
+border: 5px solid rgb(9, 255, 0);
+    transform: translate(50px,50px);
+    transition-property: all;
+    transition-duration: 2s;
+}
+h2:hover~img{
+    
+    transition-property: all;
+    transition-duration: 2s;
+transform: scale(1,1.5);
+}
+h3:hover~img{
+    transform: rotate(17deg);
+    transition-property: all;
+    transition-duration: 2s;
+}
+h4:hover~img{
+    transform: skew(20deg,17deg);
+    transition-property: all;
+    transition-duration: 2s;
+}
+    </style>
+</head>
+<body>
+<button>TRANSLATE</button>
+<h2>SCALE</h2>
+<h3>ROTATE</h3>
+<h4>SKEW</h4><br><br><br><br>
+<img src="../gulabjam.jpg" width="250px" >
+</body>
+</html>
